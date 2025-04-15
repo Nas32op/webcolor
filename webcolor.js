@@ -2,14 +2,14 @@
 red = true
 t = -1
 f = (x) => {
-    好 = false
+    ling = false
     for (i of x.childNodes) {
         if (i.nodeType == 3 && i.textContent.trim()) {
-            好 = true
+            ling = true
             break
         }
     }
-    if (好 && x.textContent.trim()) {
+    if (ling && x.textContent.trim()) {
         ot = (x.getBoundingClientRect().bottom + x.getBoundingClientRect().top) / 2 + window.scrollY
         if (Math.abs(ot - t) > 6) {
             t = ot
